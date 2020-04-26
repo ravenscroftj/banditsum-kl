@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/torch_stable.html"
+verify_ssl = false
+
+[dev-packages]
+
+[packages]
+pyrouge = "*"
+tqdm = "*"
+stanford-corenlp = "*"
+numpy = "*"
+torch = {index = "pytorch",version = "==1.4.0%2Bcu100"}
+flask = "*"
+spacy = "*"
+
+[requires]
+python_version = "3.6"
